@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Gazola TECH</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        /* 1. Banner Principal: skew() aplicado na estrutura */
+        .banner {
+            background-color: #007bff;
+            color: white;
+            padding: 40px;
+            margin: 0 40px 40px 40px;
+            transform: skew(-10deg);
+        }
+
+        /* Ajuste para o texto não ficar torto junto com o banner */
+        .banner-conteudo {
+            transform: skew(10deg);
+        }
+
+        /* 2. Botão: scale() aplicado de forma fixa */
+        .botao {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            transform: scale(1.2);
+        }
+
+        /* 3. Ícones: rotate() infinito apenas quando o mouse estiver em cima (:hover) */
+        .icone {
+            font-size: 40px;
+            display: inline-block;
+            margin: 20px;
+            padding: 10px;
+            background-color: #eee;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        @keyframes girar {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* 4. Cards: translate() aplicado de forma fixa */
+        .card {
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            padding: 20px;
+            width: 200px;
+            display: inline-block;
+            margin: 20px;
+            transform: translate(0, 20px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="banner">
+        <div class="banner-conteudo">
+            <h1>Gazola TECH</h1>
+            <p>Landing page simples e moderna.</p>
+            <button class="botao">Saiba Mais</button>
+        </div>
+    </div>
+
+    <div>
+        <div class="icone">🚀</div>
+        <div class="icone">💻</div>
+        <div class="icone">⚙️</div>
+    </div>
+
+    <div>
+        <div class="card">
+            <h3>Projeto 1</h3>
+            <p>Utilizando translate()</p>
+        </div>
+        <div class="card">
+            <h3>Projeto 2</h3>
+            <p>Estrutura simples</p>
+        </div>
+    </div>
+
+</body>
+</html>
