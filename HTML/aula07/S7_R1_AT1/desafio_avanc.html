@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Boletim Escolar</title>
+</head>
+<body>
+
+    <h1>Boletim Escolar</h1>
+
+    <table border="1">
+        
+        <tr> <!--Cabecalho Principal (colspan mesclando 3 colunas) -->
+            <th colspan="3">Relatório de Notas - 1º Semestre</th>
+        </tr>
+
+        <tr> <!-- Cabecalhos das Colunas -->
+            <th>Aluno</th>
+            <th>Disciplina</th>
+            <th>Nota</th>
+        </tr>
+
+        <tr> <!-- Inicio dos dados do Aluno -->
+            <td rowspan="4">Casio</td>  <!-- rowspan="4" faz o nome ocupar 4 linhas para baixo -->
+            <td>Matemática</td>
+            <td>8.5</td>
+        </tr>
+        
+        <tr> <!-- Como o nome ja ocupou a 1a coluna, so usamos 2 td aqui -->
+            <td>Portugues</td>
+            <td>7.0</td>
+        </tr>
+        
+        <tr> <!-- Terceira materia, segue a mesma logica da linha de cima -->
+            <td>Física</td>
+            <td>9.0</td>
+        </tr>
+        
+        <tr> <!-- colspan="2" junta os 2 espacos restantes para a media -->
+            <th colspan="2">Média Final: 8.1</th>
+        </tr>
+
+    </table>
+
+</body>
+</html>

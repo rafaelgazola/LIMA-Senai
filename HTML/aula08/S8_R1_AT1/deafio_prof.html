@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Gazola TECH</title>
+</head>
+
+<body>
+    <h1>Formulario</h1>
+    <h3>Cadastro de clientes da Gazola TECH:</h3>
+
+    <form> <!--Inicia o formulario -->
+        <fieldset> <!-- Agrupa visualmente os primeiros campos -->
+            <legend>Dados Pessoais</legend> <!-- Titulo oficial da caixa do fieldset -->
+
+            <label for="name">Nome completo:</label> <!-- O for precisa bater exatamente com o id do input -->
+            <input type="text" name="name" id="name" placeholder="Digite seu nome completo"> <!-- Campo de texto simples -->
+            <br><br>
+
+            <label for="email">E-mail:</label> <!-- Label conectado ao input de email -->
+            <input type="email" name="email" id="email" placeholder="exemplo@email.com"> <!-- Campo com validacao de email -->
+            <br><br>
+
+            <label for="telefone">Telefone:</label> <!-- Label do telefone -->
+            <input type="tel" name="telefone" id="telefone" placeholder="(11) xxxxx-xxxx"> <!-- Campo para numero de telefone -->
+            <br><br>
+
+            <label for="cidade">Cidade:</label> <!-- Label da cidade -->
+            <input type="text" name="cidade" id="cidade" placeholder="Sua cidade aqui"> <!-- Campo de texto para cidade -->
+            <br><br>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset> <!-- Segundo bloco visual de campos -->
+            <legend>Dados Complementares</legend> <!-- Tag legend usada no lugar do h3 para dar titulo correto ao fieldset -->
+
+            <label for="nascimento">Data de Nascimento:</label> <!-- Label para a data -->
+            <input type="date" name="nascimento" id="nascimento"> <!-- Campo que abre o calendario -->
+            <br><br>
+
+            <label for="obs">Observações:</label> <!-- Label para a caixa de texto grande -->
+            <textarea name="obs" id="obs" placeholder="Adicione informações adicionais"></textarea> <!-- Caixa de texto varias linhas-->
+        </fieldset>
+        
+        <br>
+        
+        <button type="submit">Cadastrar Cliente</button> <!-- Botao que envia o formulario completo -->
+    </form>
+</body>
+
+</html>
